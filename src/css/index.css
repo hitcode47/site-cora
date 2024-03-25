@@ -11,7 +11,7 @@
     --cor-trofel-primeiro-lugar: #CAB712;
     --cor-trofel-segundo-lugar: #BAB9B3;
     --cor-trofel-terceiro-lugar: #8A570C;
-    --cor-linhas-e-pontos: #ECAD00;
+    --cor-linhas-e-pontos: #8BC34A;
 }
 .corpo{
     background-color: var(--cor-de-fundo);
@@ -142,9 +142,17 @@
 }
 .main-cronograma-titulo{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1.5rem;
     text-align: center;
     margin: 5% 0 3% 0;
+}
+.main-cronograma-titulo-texto{
+    width: 68%;
+    border-bottom: solid #8BC34A;
+    padding: 0 0 10px 0;
 }
 .main-cronograma-titulo-img{
     width: 50%;
@@ -154,7 +162,12 @@
     font-size: 2.5vw;
 }
 .cronogram-dia-dimensoes-dados{
+    border-bottom: solid 4px #8BC34A;
     font-size: 1.5vw;
+    width: 80%;
+    margin: 0 0 9px 0;
+    padding: 0 0 4px 0;
+    border-radius: 4px;
 }
 .cronogram-dia-dimensoes-img{
     width: 25vw;
@@ -174,6 +187,9 @@
     width: 100%;
 }
 .cronogram-dia-dimensoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 33%;
     font-size: 1rem;
     margin: 0 0 2% 0;

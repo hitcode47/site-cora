@@ -52,29 +52,54 @@
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    height: 625px;
+    height: auto;
 }
 .main-botoes-container{
     display: flex !important;
     flex-direction: column !important;
-    gap: 5% !important;
-    width: 70%;
-    height: 100%;
+    gap: 15px !important;
+    width: 87%;
+    height: auto;
     align-items: stretch !important;
 }
 .main-botoes-container-filho{
     display: flex;
     flex-direction: column;
+    gap: 51px;
     background-color: var(--cor-coluna-inscricoes);
     height: 100%;
     align-items: center;
     justify-content: space-between;
+    border-radius: 5px;
+
+}
+.margin{
+    margin: 0px 0 -39px 0;
+}
+.main-mapa-janela-container-localizacao {
+    width: 80% !important;
+}
+.main-botoes-titulo{
+    color: #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 33px 0 0 0;
+}
+.main-botoes-texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #FFFFFF;
+    font-size: 19px;
 }
 .main-botoes-container-botao{
-    height: 29px;
-    margin: 0 0 7px 0;
+    height: auto;
+    margin: 7px 0 7px 0;
+    padding: 7px 0 7px 0;
     width: 91%;
-    font-size: 4vw;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
     display: flex;
     flex-flow: row;
     justify-content: center;
