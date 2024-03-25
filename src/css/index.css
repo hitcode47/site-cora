@@ -11,7 +11,7 @@
     --cor-trofel-primeiro-lugar: #CAB712;
     --cor-trofel-segundo-lugar: #BAB9B3;
     --cor-trofel-terceiro-lugar: #8A570C;
-    --cor-linhas-e-pontos: #8BC34A;
+    --cor-linhas-e-pontos: #5c8a00;
 }
 .corpo{
     background-color: var(--cor-de-fundo);
@@ -33,11 +33,21 @@
     height: 50%;
 }
 .cabecalho-links{
-    width: 70vw;
-    display: flex;
-    position: absolute;
     display: block;
-    left: 153px;
+    position: absolute;
+    left: 150px;
+}
+.lista-de-itens-outras-es-link-desktop{
+    color: var(--cor-das-palavras);
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin: 5px 0px 5px 6px;
+    font-style: normal;
 }
 .open-tablet{
     display: none;
@@ -58,9 +68,9 @@
 }
 .cabecalho-links-regulamentos{
     position: absolute;
-    top: 65px;
-    left: 146px;
-    width: 479px;
+    top: 66px;
+    left: 162px;
+    width: 490px;
     height: 100px;
     background-color: #3b3838;
     overflow: hidden;
@@ -70,16 +80,42 @@
 .cabecalho-checkbox:checked ~ .cabecalho-links-regulamentos{
     display: block;
     position: absolute;
-    top: 65px;
-    left: 146px;
+    top: 66px;
+    left: 162px;
     border-radius: 6px;
-    width: 479px;
+    width: 490px;
     height: 100px;
     background-color: #3b3838;
     max-height: 114px;
     transition: max-height 0.5s ease;
 }
-.cabecalho-links-regulamentos-link{
+.lista-de-itens-outras-ed{
+    display: block;
+    position: absolute;
+    top: 66px;
+    left: 455px;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 6px;
+    width: 259px;
+    height: auto;
+    background-color: #3b3838;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+}
+.cabecalho-checkbox-outras-ed-desktop:checked ~ .lista-de-itens-outras-ed{
+    display: block;
+    position: absolute;
+    top: 66px;
+    left: 455px;
+    border-radius: 6px;
+    width: 259px;
+    height: auto;
+    background-color: #3b3838;
+    max-height: 314px;
+    transition: max-height 0.5s ease;
+}
+.cabecalho-links-regulamentos-link, .cabecalho-links-link-desktop{
     color: var(--cor-das-palavras);
     position: relative;
     text-decoration: none;
@@ -99,7 +135,8 @@
     width: 65%;
     margin: 4% 0 0 0;
 }
-.main-logo-img-smartphone, .cabecalho-perfil-img, .open, .cabecalho-perfil-img-tablet{
+.main-logo-img-smartphone, .cabecalho-perfil-img, .open, .cabecalho-perfil-img-tablet,
+.cabecalho-checkbox-outras-ed, .cabecalho-checkbox-outras-ed-desktop{
     display: none;
 }
 .lista-de-itens-cabecalho{
@@ -108,6 +145,7 @@
     right: 0%;
     width: 100%;
     overflow: hidden;
+    height: auto;
     background-color: #181616;
     max-height: 0;
     transition: max-height 0.5s ease; /* Adiciona uma transição de altura */
@@ -151,7 +189,7 @@
 }
 .main-cronograma-titulo-texto{
     width: 68%;
-    border-bottom: solid #8BC34A;
+    border-bottom: solid #5c8a00;
     padding: 0 0 10px 0;
 }
 .main-cronograma-titulo-img{
@@ -162,7 +200,7 @@
     font-size: 2.5vw;
 }
 .cronogram-dia-dimensoes-dados{
-    border-bottom: solid 4px #8BC34A;
+    border-bottom: solid 4px #5c8a00;
     font-size: 1.5vw;
     width: 80%;
     margin: 0 0 9px 0;
@@ -184,7 +222,7 @@
 .main-cronograma-dia{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 150%;
 }
 .cronogram-dia-dimensoes{
     display: flex;

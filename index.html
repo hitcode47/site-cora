@@ -21,15 +21,25 @@
             <img src="src/svg/barra-unica-menu.svg" alt="barra de perfil" class="img__perfil">
         </label>
         <nav class="cabecalho-links">
-            <a class = "cabecalho-links-link" href="">Inscrições</a>
-            <input type="checkbox"  id="extensao" class="cabecalho-checkbox"> <!--Checkbox associado ao regulamento-->
+            <a class = "cabecalho-links-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdZAjgzOlazCiB0b0I_ijz2N_KNpgXg_8S2l__DDNU7vTpMog/viewform">Inscrições</a>
+            <input type="checkbox"  id="extensao" class="cabecalho-checkbox" onchange="updateCheckboxes(this)"> <!--Checkbox associado ao regulamento-->
             <label for="extensao" class="cabecalho-links-link">Regulamento</label>
             <div class="cabecalho-links-regulamentos">
-                <a class = "cabecalho-links-regulamentos-link" href="">Regulamento Carrinho Seguidor de Linha</a>
-                <a class = "cabecalho-links-regulamentos-link" href="">Regulamento Robô Sumô</a>
+                <a class = "cabecalho-links-regulamentos-link" href="doc/Regulamento_Seguidor_2024.pdf">Regulamento Carrinho Seguidor de Linha</a>
+                <a class = "cabecalho-links-regulamentos-link" href="doc/Regulamento_Sumo_2024.pdf">Regulamento Robô Sumô</a>
             </div>
-            <a class = "cabecalho-links-link" href="">Edital</a>
-            <a class = "cabecalho-links-link" href="">Outras Edições</a>
+            <a class = "cabecalho-links-link" href="doc/Regulamento_CoRA24.pdf">Edital</a>
+            <input type="checkbox" class="cabecalho-checkbox-outras-ed-desktop" id="outras-ed-desktop" onchange="updateCheckboxes(this)">
+            <label for="outras-ed-desktop" class="cabecalho-links-link"><!--Componente que assicia o checkbox acima à imagem-->
+                Outras Edições
+            </label>
+                    <div class="lista-de-itens-outras-ed">
+                       <a class="lista-de-itens-outras-es-link-desktop" href="http://www.cora.cpdee.ufmg.br/antigos/2019/2019.html">Cora 2019</a> 
+                       <a class="lista-de-itens-outras-es-link-desktop" href="http://www.cora.cpdee.ufmg.br/antigos/2020/2020.html">Cora 2020</a> 
+                       <a class="lista-de-itens-outras-es-link-desktop" href="http://www.cora.cpdee.ufmg.br/antigos/2021/2021.html">Cora 2021</a> 
+                       <a class="lista-de-itens-outras-es-link-desktop" href="http://www.cora.cpdee.ufmg.br/antigos/2022/2022.html">Cora 2022</a> 
+                       <a class="lista-de-itens-outras-es-link-desktop" href="http://www.cora.cpdee.ufmg.br/antigos/2023/2023.html">Cora 2023</a> 
+                    </div>
         </nav>
 
 <!--
@@ -53,12 +63,19 @@
             <img src="src/svg/barra-unica-menu.svg" alt="barra de perfil" class="img__perfil">
         </label>
         <ul class="lista-de-itens-cabecalho">
-            <li class="lista-de-itens-cabecalho-li"><a class="lista-de-itens-cabecalho-li-texto" href="">Cronograma</a></li>
-            <li class="lista-de-itens-cabecalho-li"><a class="lista-de-itens-cabecalho-li-texto" href="">Prêmios</a></li>
             <li class="lista-de-itens-cabecalho-li"><a class="lista-de-itens-cabecalho-li-texto" href="">Sobre a Cora</a></li>
-            <li class="lista-de-itens-cabecalho-li"><a class="lista-de-itens-cabecalho-li-texto" href="">Outras Edições</a></li>
             <li class="lista-de-itens-cabecalho-li"><a class="lista-de-itens-cabecalho-li-texto" href="">Apoie</a></li>
-            <li class="lista-de-itens-cabecalho-li"><a class="lista-de-itens-cabecalho-li-texto" href="">Compartilhar</a></li>
+            <input type="checkbox" class="cabecalho-checkbox-outras-ed-sm" id="outras-ed">
+            <label for="outras-ed"><!--Componente que assicia o checkbox acima à imagem-->
+                <p class="lista-de-itens-cabecalho-li-texto lista-de-itens-cabecalho-li">Outras Edições</p>
+            </label>
+                    <div class="lista-de-itens-outras-ed-smartphone">
+                       <a class="lista-de-itens-outras-es-link" href="http://www.cora.cpdee.ufmg.br/antigos/2019/2019.html">Cora 2019</a> 
+                       <a class="lista-de-itens-outras-es-link" href="http://www.cora.cpdee.ufmg.br/antigos/2020/2020.html">Cora 2020</a> 
+                       <a class="lista-de-itens-outras-es-link" href="http://www.cora.cpdee.ufmg.br/antigos/2021/2021.html">Cora 2021</a> 
+                       <a class="lista-de-itens-outras-es-link" href="http://www.cora.cpdee.ufmg.br/antigos/2022/2022.html">Cora 2022</a> 
+                       <a class="lista-de-itens-outras-es-link" href="http://www.cora.cpdee.ufmg.br/antigos/2023/2023.html">Cora 2023</a> 
+                    </div>
         </ul>
     </header>
     <div class="main-logo">
@@ -68,42 +85,43 @@
     
     <main class = "main">
         <div class="main-conteiner-inscricoes">
-            <a class="main-conteiner-inscricoes-texto" href=""><h1>Inscrições Abertas</h1></a>
+            <a class="main-conteiner-inscricoes-texto" href="https://docs.google.com/forms/d/e/1FAIpQLSdZAjgzOlazCiB0b0I_ijz2N_KNpgXg_8S2l__DDNU7vTpMog/viewform"><h1>Inscrições Abertas</h1></a>
         </div>
         <div class="main-cronograma-titulo">
             <h1 class="main-cronograma-titulo-texto">Cronograma<h1>
+            <h3 class="">O cronograma do evento será publicado em breve<h1></h3>
         </div>
         <div class="crono">
             <div class="main-cronograma">
                 <section class="main-cronograma-dia ">
                     <div class="main-cronograma-dia-terca cronogram-dia-dimensoes">
-                        <h2 class="cronogram-dia-dimensoes-titulo">Terça(19/09)</h2><br> 
-                        <h3 class="cronogram-dia-dimensoes-dados" >check-in dos Participantes 08h às 10h</h3>
+                        <h2 class="cronogram-dia-dimensoes-titulo">Dia 1</h2><br> 
+                        <h3 class="cronogram-dia-dimensoes-dados" >Em Construção...</h3>
                         
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
                     </div>
                     <div class="main-cronograma-dia-quarta cronogram-dia-dimensoes">
-                        <h2 class="cronogram-dia-dimensoes-titulo">Quarta(20/09)</h2><br>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
+                        <h2 class="cronogram-dia-dimensoes-titulo">Dia 2</h2><br>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
                     </div>
                     <div class="main-cronograma-dia-quinta cronogram-dia-dimensoes">
-                    <h2 class="cronogram-dia-dimensoes-titulo">Quinta(21/09)</h2><br>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
+                    <h2 class="cronogram-dia-dimensoes-titulo">Dia 3</h2><br>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
                     </div>
                     <div class="main-cronograma-dia-sexta cronogram-dia-dimensoes">
-                        <h2 class="cronogram-dia-dimensoes-titulo">Sexta(22/09)</h2><br>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
-                        <h3 class="cronogram-dia-dimensoes-dados">check-in dos Participantes 08h às 10h</h3>
+                        <h2 class="cronogram-dia-dimensoes-titulo">Dia 4</h2><br>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
+                        <h3 class="cronogram-dia-dimensoes-dados">Em Construção...</h3>
                     </div>
                 </section>
             </div>
@@ -178,7 +196,7 @@
                     <div>
                         <h5 class="main-botoes-texto">Inscreva-se aqui para a CoRA 2024</h5>
                     </div>
-                    <div class="main-botoes-botoes-div"><a class="main-botoes-container-botao" href="">incrições</a></div>
+                    <div class="main-botoes-botoes-div"><a class="main-botoes-container-botao" href="https://docs.google.com/forms/d/e/1FAIpQLSdZAjgzOlazCiB0b0I_ijz2N_KNpgXg_8S2l__DDNU7vTpMog/viewform">incrições</a></div>
                 </div>
                     <div class="main-botoes-container-filho">
                         <div>
@@ -215,7 +233,7 @@
                 <div class="main-mapa-janela-filho">
                     <div class="main-mapa-janela-container-localizacao">
                         <img class="main-mapa-container-localização-img" src="src/img/localizacao.png" alt="">
-                        <a class="main-mapa-container-localização-link" href="">Pequisar rotas</a>
+                        <a class="main-mapa-container-localização-link" href="https://www.google.com/maps/place/Escola+de+Engenharia+-+UFMG/@-19.8684978,-43.9624843,17.94z/data=!4m6!3m5!1s0xa6908ba0d42d5b:0x43a5f491fad68b3d!8m2!3d-19.8692203!4d-43.9627343!16s%2Fg%2F120sdltr?hl=pt-BR&entry=ttu">Pequisar rotas</a>
                     </div>
                 </div>
             </div>
@@ -245,7 +263,7 @@
                     <hr>
                     <ul>
                         <li>
-                            <a class="footer-informacoes-links-descrição" href="">Sobre a Cora</a>
+                            <a class="footer-informacoes-links-descrição" href="http://www.cora.cpdee.ufmg.br/#SOBRECORA">Sobre a Cora</a>
                         </li>
                         <li>
                             <a class="footer-informacoes-links-descrição" href="">Dúvidas frequêntes</a>
@@ -254,7 +272,7 @@
                             <a class="footer-informacoes-links-descrição" href="">Sugestões</a>
                         </li>
                         <li>
-                            <a class="footer-informacoes-links-descrição" href="">Seja um Patrocinador</a>
+                            <a class="footer-informacoes-links-descrição" href="http://www.cora.cpdee.ufmg.br/#apoie">Seja um Patrocinador</a>
                         </li>
                     </ul>
                 </div>
@@ -263,22 +281,23 @@
                 <h3 class="footer-informacoes-contatos-convite">Visite-nos</h3>
                 <ul class="footer-informacoes-contatos-lista">
                     <li>
-                        <a  href=""><img class="footer-informacoes-contatos-logo petee-logo" src="src/svg/logo-petee-rodape.svg" alt=""></a>
+                        <a  href="http://petee.cpdee.ufmg.br/"><img class="footer-informacoes-contatos-logo petee-logo" src="src/svg/logo-petee-rodape.svg" alt=""></a>
                     </li>
                     <li>
-                        <a  href=""><img class="footer-informacoes-contatos-logo" src="src/svg/instagram-svgrepo-com.svg" alt=""></a>
+                        <a  href="https://www.instagram.com/cora_ufmg/"><img class="footer-informacoes-contatos-logo" src="src/svg/instagram-svgrepo-com.svg" alt=""></a>
                     </li>
                     <li>
-                        <a  href=""><img class="footer-informacoes-contatos-logo" src="src/svg/facebook-round-svgrepo-com.svg" alt=""></a>
+                        <a  href="https://www.facebook.com/peteeUFMG"><img class="footer-informacoes-contatos-logo" src="src/svg/facebook-round-svgrepo-com.svg" alt=""></a>
                     </li>
                     <li>
-                        <a  href=""><img class="footer-informacoes-contatos-logo" src="src/svg/youtube-svgrepo-com.svg" alt=""></a>
+                        <a  href="https://www.youtube.com/PETEEUFMG"><img class="footer-informacoes-contatos-logo" src="src/svg/youtube-svgrepo-com.svg" alt=""></a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmK605gD-qVGAcKKTXI1zuIKH7GanUuZ4&callback=initMap&v=weekly&solution_channel=GMP_CCS_customcontrols_v1" defer></script>
-    <script src="script/map.js"></script>
+    <script src="script/map.js"></script>                                     
+    <script src="script/updatecheckbox.js"></script>
 </body>
 </html>

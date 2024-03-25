@@ -17,6 +17,17 @@
 .main-svg-carro{
     display: none !important;
 }
+.lista-de-itens-outras-ed{
+    position: static !important;
+    margin: 0 0 23px 35px;
+}
+.cabecalho-checkbox-outras-ed-desktop:checked ~ .lista-de-itens-outras-ed{
+    position: static !important;
+    margin: 0 0 23px 35px;
+}
+.main-cronograma{
+    display: none !important; /*temporário*/
+}
 .main-cronograma-dia {
     display: flex !important;
     gap: 1% !important;
@@ -72,7 +83,7 @@
     width: 103%;
     height: auto;
     background-color: #181616;
-    max-height: 40%;
+    max-height: 800px !important;
     transition: max-height 0.5s ease;
 }
 .cabecalho-links-regulamentos{

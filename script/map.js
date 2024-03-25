@@ -1,4 +1,4 @@
-// Função de inicialização do mapa
+
 function initMap() {
     // Coordenadas iniciais do mapa
     var myLatLng = {lat: -19.869199379077436, lng: -43.96267620982048};
@@ -18,4 +18,5 @@ function initMap() {
         map: map,
         title: 'Escola de Engenharia - UFMG' // Título do marcador
     });
+
 }
