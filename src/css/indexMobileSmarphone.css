@@ -230,7 +230,7 @@
 .cabecalho-perfil-img:checked ~ .lista-de-itens-cabecalho{
     display: block;
     position: absolute;
-    top: 98.5px;
+    top: 100.5px;
     right: 0%;
     width: 100%;
     height: auto;
