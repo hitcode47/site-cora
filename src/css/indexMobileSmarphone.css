@@ -110,7 +110,10 @@
     border-radius: 3px;
     border: 1px solid rgb(40, 167, 69);
     text-decoration: none;
-
+}
+.main-botoes-container-botao:hover{
+    background-color: #077420;
+    border: 2px solid var(--cor-botoes);
 }
 .lista-de-itens-outras-ed-smartphone{
     display: flex;
